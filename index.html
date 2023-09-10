@@ -6,43 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./site.css">
     <style>
-        #color{
-            color: green;
+        .columns{
+            width: 100%;
+            border: 1px solid #eee;
         }
-      
-        img[src="https://placehold.co/200x200"] {
-            border: 5px solid green;
-        }
-        div, h1 {
-            border: 2px solid #333;
-        }
-        /* This is combinator selector */
-        main > h1{
-            font-size: 1.5em;
-        }
-
-        /* This is decendant selector */
-        main h1{
-            font-size: 3em;
-        }
-        h1{
-            display: inline;
-            width: 90%;
+        .columns > div{
+            width: 49%;
+            border: 1px solid #3a3a3a;
+            float: left;
         }
     </style>
 </head>
 <body>
     <main>
-        <div id="color" >
-            Hello
-        </div>
-        <div id="color2" >
-            Hello
-            <h1>I am h1 inside div</h1>
-        </div>
-        <img src="https://placehold.co/100x100" alt="image">
-        <img src="https://placehold.co/200x200" alt="image">
-        <h1>This is heading 1</h1>
+       <div class="columns">
+            <div>Column 1</div>
+            <div>Column 2</div>
+       </div>
     </main>
 </body>
 </html>
