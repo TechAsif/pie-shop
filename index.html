@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="./site.css">
     <style>
         .columns{
+            display: flex;
             width: 100%;
             border: 1px solid #eee;
         }
-        .columns > div{
-            width: 49%;
-            border: 1px solid #3a3a3a;
-            float: left;
+
+        .columns > div {
+            border: 1px solid #ababab;
+            flex: 1;
         }
+
+        .columns > div:nth-of-type(2){
+            flex: 2;
+        }
+        
     </style>
 </head>
 <body>
@@ -22,6 +28,7 @@
        <div class="columns">
             <div>Column 1</div>
             <div>Column 2</div>
+            <div>Column 3</div>
        </div>
     </main>
 </body>
