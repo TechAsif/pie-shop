@@ -6,41 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="./site.css">
     <style>
-        .columns{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            border: 1px solid #eee;
-        }
-
-        .columns > div {
-            border: 1px solid #ababab;
-            /* flex: 1; */
-            /* flex-grow: 0;
-            flex-shrink: 1;
-            flex-basis: auto; */
-            /* flex-grow: 3;  */
-            flex-shrink: 0;
-            
-        }
         
-        .columns div{
-            flex-shrink: 0;
+        .desktop, .print{
+            display: none;
         }
 
-        .columns > div:nth-of-type(2){
-            /* flex: 2; */
+        @media print{
+            .mobile, .desktop{
+                display: none;
+            }
+            .print{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .mobile, .print{
+                display: none;
+            }
+            .desktop{
+                display: block;
+            }
         }
         
     </style>
 </head>
 <body>
     <main>
-       <div class="columns">
-            <div>Column 1</div>
-            <div>Column 2</div>
-            <div>Column 3</div>
-       </div>
+       <div class="desktop">Desktop</div>
+       <div class="mobile">Mobile</div>
+       <div class="print">Print</div>
     </main>
 </body>
 </html>
