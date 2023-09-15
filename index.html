@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./site.css">
-    <style>
-        
-        .desktop, .print{
-            display: none;
-        }
-
-        @media print{
-            .mobile, .desktop{
-                display: none;
-            }
-            .print{
-                display: block;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            .mobile, .print{
-                display: none;
-            }
-            .desktop{
-                display: block;
-            }
-        }
-        
-    </style>
-</head>
-<body>
+ </head>
+ <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-       <div class="desktop">Desktop</div>
-       <div class="mobile">Mobile</div>
-       <div class="print">Print</div>
+        <aside><img src="images/logo.png" alt="Pie Shop Logo"></aside>
+        <article>
+            <img src="images/banner.png" alt="">
+            <h1>Welcome to Pie Shop</h1>
+            <p class="sub-title">
+                From pecan to plum, our pies are are made in with the warmth and target take a moment to
+                <a href="pies.html">browse our pies</a>
+                and see which of our delectable
+                desserts are soon to arrive on your doorstep.
+            </p>
+        </article>
     </main>
-</body>
-</html>
+ </body>
+ </html>
